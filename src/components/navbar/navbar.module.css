@@ -1,0 +1,119 @@
+.navContainer {
+  max-width: 100%;
+}
+
+.mainNav {
+  color: rgb(219, 219, 219);
+  background-color: #057922be;
+  /* height: 80px; */
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(3px);
+}
+
+/* .brand {
+  margin-right: 3rem !important;
+} */
+
+.logo {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-right: 3rem !important;
+}
+
+.navLink {
+  margin-right: 4rem;
+  color: gold !important;
+  letter-spacing: 4px !important;
+}
+
+.navLink:hover {
+  text-decoration: underline !important;
+}
+
+/* @media screen and (max-width: 360px) {
+  .brand {
+    display: none;
+  }
+} */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* imposta un colore di sfondo semitrasparente */
+  backdrop-filter: blur(5px); /* applica un effetto di sfocatura */
+  z-index: 999; /* imposta il livello di profondità dello z-index */
+}
+
+.down {
+  border: 0.5px solid white;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+.out {
+  margin-right: 0.5rem;
+  transition: all 0.5s;
+}
+
+.outHover {
+  transform: translate(-0.3rem);
+}
+
+.cart {
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.cartContainer {
+  position: relative;
+  cursor: default;
+  margin-right: 40px;
+  margin-top: -10px;
+  width: 30px;
+  background-color: transparent;
+  padding: 8px 10px;
+}
+
+.cartCounter {
+  font-size: small;
+  position: absolute;
+  top: -12px;
+  left: 50px;
+  /* background-color: rgba(255, 255, 255, 0.233); */
+  border-radius: 50%;
+  /* padding: 2px 6px; */
+}
+
+.cartUpdated {
+  animation: cartAnimation 1s;
+  transform: scale(1);
+  color: white;
+}
+
+@keyframes cartAnimation {
+  0% {
+    color: white;
+    transform: scale(1);
+  }
+  50% {
+    color: rgb(56, 56, 255);
+    transform: scale(1.7);
+  }
+  100% {
+    color: white;
+    transform: scale(1);
+  }
+}

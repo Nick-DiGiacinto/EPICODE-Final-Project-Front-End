@@ -1,0 +1,68 @@
+.myAccordionOptions {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+}
+
+.myAccordionGameContainer {
+  width: 100%;
+  height: 570px;
+  background-size: cover;
+  background-position: center;
+}
+
+.myAccordionGameOptions {
+  border-top: 1px solid rgba(248, 249, 250, 0.6);
+  padding: 2rem 3rem;
+  height: 40%;
+  background-color: rgba(23, 3, 54, 0.7);
+}
+
+.myAccordionPlay {
+  text-align: center;
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.myAccordionPlay:hover {
+  background-color: #15171e;
+  border: 0.5px solid rgb(0, 0, 0);
+
+  animation: button_hover ease 0.5s both;
+}
+
+@keyframes button_hover {
+  0% {
+    border: 0.5px solid white;
+    background-color: transparent;
+  }
+
+  100% {
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: #15171e;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .myAccordionOptions {
+    width: 100%;
+  }
+
+  .myAccordionGameOptions {
+    height: 50%;
+    padding: 2rem 0.875rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .myAccordionGameOptions {
+    height: 60%;
+  }
+}

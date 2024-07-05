@@ -1,0 +1,45 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 700px;
+  height: 500px;
+  padding: 4rem 5rem;
+  border-radius: 10px;
+  background-color: #15171e;
+}
+
+.frase {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: lightgray;
+}
+
+.login_button {
+  margin: 2rem 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.login_icons {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  color: white;
+}
+
+.error {
+  color: red;
+  outline: 2px solid red;
+}
+
+.success {
+  outline: 2px solid green;
+}

@@ -1,0 +1,84 @@
+.next {
+  z-index: 999;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  font-size: 3rem;
+  background-color: #0c0a2090;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.next:hover {
+  transform: translateX(10px);
+}
+
+.prev {
+  z-index: 999;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  font-size: 3rem;
+  background-color: #0c0a2090;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.prev:hover {
+  transform: translateX(-10px);
+}
+
+.bottom {
+  position: absolute;
+  right: 50%;
+  bottom: 4%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(50%);
+}
+
+.bottomFiller {
+  margin: 0 1rem;
+  cursor: pointer;
+  width: 100px;
+  height: 12px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  transition: all 0.3s;
+}
+
+.bottomFiller:hover {
+  background-color: rgb(134, 134, 134);
+  transform: scale(1.1);
+}
+
+.bottomFillerCurrent {
+  background-color: rgb(134, 134, 134);
+}
+
+/* .slideAnim {
+  animation: fadeIn 0.7s ease-in;
+} */
+.slideAnim {
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(2000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

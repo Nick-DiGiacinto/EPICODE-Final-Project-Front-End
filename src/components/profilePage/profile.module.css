@@ -1,0 +1,38 @@
+.body {
+  margin-top: 120px;
+  min-height: 100vh;
+}
+
+h2 {
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.493);
+}
+
+.button {
+  margin-top: 2rem;
+  color: white;
+  padding: 10px 20px;
+  background: #15171e;
+  background: linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -webkit-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -moz-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  border: 0.5px solid rgb(255, 255, 255);
+  transform: scale(1);
+}
+
+.button:hover {
+  border: 0.5px solid rgb(255, 255, 255);
+  transform: scale(1.05);
+  border: 0.5px solid white;
+  animation: button_hover 0.3s both;
+}
+
+@keyframes button_hover {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}

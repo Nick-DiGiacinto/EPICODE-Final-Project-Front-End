@@ -1,0 +1,71 @@
+.login {
+  max-width: 700px;
+  height: 500px;
+  z-index: 9999;
+  position: fixed;
+  top: 5%;
+  right: 30%;
+  padding: 0 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #15171e;
+}
+
+.frase {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: lightgray;
+}
+
+.frase::before,
+.frase::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: lightgray;
+}
+
+.frase::before {
+  left: -35%;
+}
+
+.frase::after {
+  right: -35%;
+}
+
+.login_button {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.login_icons {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  color: white;
+}
+
+@media screen and (max-width: 990px) {
+  .login {
+    top: 0;
+    right: 0;
+    text-align: center;
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  .control {
+    width: 70% !important;
+  }
+
+  .login_button {
+    width: 70%;
+  }
+}

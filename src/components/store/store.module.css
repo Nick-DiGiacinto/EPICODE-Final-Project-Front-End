@@ -1,0 +1,38 @@
+.body {
+  margin: 110px 50px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.loading {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.pacman {
+  background: #16b307;
+  background: linear-gradient(180deg, #012104 0%, #16b307 100%);
+  background: -webkit-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -moz-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  min-width: 100vw;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+.accordionBody {
+  background-color: transparent !important;
+  backdrop-filter: blur(4px) !important;
+  z-index: 9999 !important;
+} */
+
+/* .accordion {
+  position: absolute;
+  z-index: 999999;
+} */

@@ -1,0 +1,136 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  transition: all 1.5s;
+}
+
+.overlay {
+  /* overflow-x: hidden; */
+  height: 100vh;
+  position: relative;
+  background: #170336;
+  background: linear-gradient(90deg, #170336 10%, rgba(23, 3, 54, 0) 80%);
+  background: -webkit-linear-gradient(
+    90deg,
+    #170336 15%,
+    rgba(23, 3, 54, 0) 80%
+  );
+  background: -moz-linear-gradient(90deg, #170336 15%, rgba(23, 3, 54, 0) 80%);
+}
+
+.container {
+  padding-top: 140px;
+  position: relative;
+  width: 100vw !important;
+  background-color: transparent;
+}
+
+.aside {
+  max-height: 100vh;
+  max-width: 100%;
+  flex-direction: column;
+  overflow-y: auto;
+  animation: asideTranslate ease 1.3s;
+}
+
+@keyframes asideTranslate {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.searchbar {
+  color: whitesmoke !important;
+  min-width: 340px;
+  max-width: 20%;
+  margin-bottom: 40px;
+  border-radius: 0 !important;
+  background-color: #fdfdfd1c !important;
+}
+
+.textBox {
+  /* transform: translateX(0); */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 8rem;
+}
+
+.textInner {
+  animation: popup ease 1s;
+  padding: 2rem;
+  border-top: 1px solid rgba(248, 249, 250, 0.6);
+  border-left: 1px solid rgba(248, 249, 250, 0.6);
+  width: 55%;
+  background-color: rgba(23, 3, 54, 0.6);
+  max-width: 1200px;
+  backdrop-filter: blur(5px);
+  box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.77);
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.textPlay {
+  text-align: center;
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.textPlay:hover {
+  background-color: #15171e;
+  border: 0.5px solid rgb(0, 0, 0);
+
+  animation: button_hover ease 0.5s both;
+}
+
+@keyframes button_hover {
+  0% {
+    border: 0.5px solid white;
+    background-color: transparent;
+  }
+
+  100% {
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: #15171e;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .textBox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .searchbar {
+    min-width: 100% !important;
+  }
+}

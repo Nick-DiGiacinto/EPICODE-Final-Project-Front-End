@@ -1,0 +1,7 @@
+.body {
+  width: 100%;
+  background: #15191e;
+  background: linear-gradient(180deg, #012104 0%, #16b307 100%);
+  background: -webkit-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -moz-linear-gradient(180deg, #15171e 0%, #152855 100%);
+}

@@ -1,0 +1,84 @@
+.body {
+  /* min-height: 560px; */
+  min-height: 100vh;
+  width: auto;
+  margin-top: 150px;
+}
+
+.button {
+  padding: 5px 30px;
+  background-color: #0c0a20;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+
+.button_remove {
+  margin-top: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.button_remove:hover {
+  transform: scale(1.2);
+}
+
+.total {
+  margin: 0;
+  margin-top: 1rem;
+  padding: 5px 20px;
+  background-color: #0c0a20;
+}
+
+.bought {
+  color: green;
+  font-size: large;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+
+.bought span {
+  color: whitesmoke;
+}
+
+.paypalContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.paypalContainer div {
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(1000px);
+  animation: paypal 1s forwards;
+}
+
+@keyframes paypal {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.giftForm {
+  transform: translateX(0);
+  animation: slideIn ease 1s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

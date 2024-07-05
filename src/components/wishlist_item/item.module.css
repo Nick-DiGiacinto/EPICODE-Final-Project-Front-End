@@ -1,0 +1,60 @@
+@media screen and (max-width: 1400px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.button_buy {
+  padding: 5px 30px;
+  background-color: #0a2011;
+  margin-top: 1rem;
+  transition: all 0.3s;
+  border: none;
+}
+
+.button_buy:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translate(1.02);
+}
+
+.button_remove {
+  cursor: pointer;
+  width: 10%;
+  transition: all 0.4s;
+}
+
+.button_remove:hover {
+  transform: scale(1.2);
+}
+
+.hr {
+  margin-top: 1rem;
+  width: 100%;
+  border-width: 2px;
+  color: rgba(255, 255, 255, 0.719);
+  opacity: 0.4;
+  animation: 1.5s hr ease-in-out both;
+}
+
+@keyframes hr {
+  from {
+    transform: scaleX(0%);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(100%);
+    transform-origin: left;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .button_remove {
+    width: 6%;
+  }
+}

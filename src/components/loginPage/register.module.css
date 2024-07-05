@@ -1,0 +1,41 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.formContainer {
+  width: 700px;
+  height: 500px;
+  text-align: center;
+  /* width: 100%;
+  max-width: 35rem; */
+  background-color: #15171e;
+  padding: 1rem 5rem;
+}
+
+.login_button {
+  margin-top: 2rem;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* .form-control.is-invalid:focus,
+.form-control.is-valid:focus {
+  box-shadow: none;
+} */
+
+@media screen and (max-width: 630px) {
+  .formContainer {
+    width: 100%;
+    padding: 10px;
+  }
+  .loginContainer {
+    padding: 0 10px;
+  }
+}

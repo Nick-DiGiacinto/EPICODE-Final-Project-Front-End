@@ -1,0 +1,117 @@
+.body {
+  margin: 10px auto;
+  width: 100vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 1 !important;
+  position: relative;
+}
+
+.img_container {
+  max-width: 40%;
+  height: auto;
+}
+
+.img {
+  animation: image ease 2s;
+  margin-top: 15px;
+}
+
+@keyframes image {
+  0% {
+    translate: -300%;
+  }
+
+  50% {
+    translate: -300%;
+  }
+
+  100% {
+    translate: 0%;
+  }
+}
+
+.text {
+  animation: text 1s ease-in-out 1.5s both;
+  margin: 15px;
+}
+
+@keyframes text {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bottom {
+  padding: 0 1rem;
+  backdrop-filter: blur(5px) !important;
+}
+
+.button {
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+  background: #15171e;
+  background: linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -webkit-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -moz-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  border: 0.5px solid white;
+}
+
+.button:hover {
+  border: 0.5px solid rgb(255, 255, 255);
+  transform: scale(1.1);
+  animation: button_hover ease-in-out 0.2s;
+  background: transparent;
+}
+
+@keyframes button_hover {
+  0% {
+    transform: scale(1);
+    border: 0.5px solid white;
+  }
+
+  100% {
+    transform: scale(1.1);
+    border: 0.5px solid rgb(255, 255, 255);
+    background: transparent;
+  }
+}
+
+.inLibrary {
+  width: fit-content;
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+  background: #15171e;
+  background: linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -webkit-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -moz-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  border: 0.5px solid white;
+}
+
+.inLibrary p {
+  margin: 0;
+}
+
+.inCart {
+  width: fit-content;
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+  background: #15171e;
+  background: linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -webkit-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  background: -moz-linear-gradient(180deg, #15171e 0%, #152855 100%);
+  border: 0.5px solid white;
+}
+
+.inCart p {
+  margin: 0;
+}
